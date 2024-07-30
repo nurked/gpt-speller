@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <title>GPT Speller</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            label {
+                display: block;
+                margin-top: 10px;
+            }
+            input[type="text"],
+            input[type="number"] {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+            }
+            button {
+                margin-top: 20px;
+                padding: 10px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Settings</h1>
+        <label for="apiKey">ChatGPT API Key:</label>
+        <input type="text" id="apiKey" placeholder="Enter your API key here" />
+
+        <label for="minTextLength">Minimum Text Length:</label>
+        <input
+            type="number"
+            id="minTextLength"
+            placeholder="Enter minimum text length"
+        />
+
+        <button id="save">Save</button>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
